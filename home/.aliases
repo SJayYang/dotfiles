@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# NAVIGATION
+alias ..="cd .."
+alias ...="cd ../.."
+alias home="cd ~"
+
+# Helpful commands
+alias c="clear"
+# Counts files in the directory and its subdirectories (ignores the actual
+# subdirectory, but counts files within those subdirectories
+alias count='find . -type f | wc -l'
+
+# COMMON DIRECTORIES
+alias dl="cd ~/Downloads"
+alias gh="cd ~/Documents/Github"
+
+# EASIER DOTFILE EDITING
+alias aliases="vi ~/.aliases && . ~/.aliases"
+alias bashprofile="vi ~/.bash_profile && . ~/.bash_profile"
+
+# COLORS
+alias ls="ls -GFh"
+
+# APPLICATIONS
+alias spotify="brew services restart spotifyd"
+alias gcal="gcalcli"
+alias vi="vim"
+alias yt="youtube-dl --config-location ~/.config/youtube-dl/config"
+alias todo="todoist list"
+alias stanfordtodo="todoist list --filter '##Stanford'"
+# MEMORY
+
+# CONFIRMATION
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+alias ln="ln -i"
+
+
+# DOWNLOADING
+# Continues a partial download
+alias wget="wget -c"
+
+
+# COMPRESSION
+alias untar="tar -zxvf"
+# arguments after gzipdir are --output, and --directory, in that order
+alias gzipdir="tar -zcvf"
