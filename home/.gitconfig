@@ -6,3 +6,5 @@
 [user]
 	name = SJayYang
 	email = stanley.j.yang@gmail.com
+[core]
+	excludesfile = /Users/stanley/.gitignore

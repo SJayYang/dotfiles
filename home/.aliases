@@ -1,18 +1,23 @@
 #!/usr/bin/env bash
 # NAVIGATION
-alias ..="cd .."
-alias ...="cd ../.."
-alias home="cd ~"
-
+alias ..="cl .."
+alias ...="cl ../.."
+alias home="cl ~"
+alias videos="cl ~/Downloads/Videos"
+alias downloads="cl ~/Downloads"
+alias rockefeller="cl ~/'Onedrive - rockefeller.edu'/"
 # Helpful commands
 alias c="clear"
 # Counts files in the directory and its subdirectories (ignores the actual
 # subdirectory, but counts files within those subdirectories
 alias count='find . -type f | wc -l'
 
+# Provides memory data
+alias memory="python ~/Github/utilities/memory.py"
+
 # COMMON DIRECTORIES
-alias dl="cd ~/Downloads"
-alias gh="cd ~/Documents/Github"
+alias dl="cl ~/Downloads"
+alias gh="cl ~/Github"
 
 # EASIER DOTFILE EDITING
 alias aliases="vi ~/.aliases && . ~/.aliases"
@@ -22,11 +27,10 @@ alias bashprofile="vi ~/.bash_profile && . ~/.bash_profile"
 alias ls="ls -GFh"
 
 # APPLICATIONS
-alias spotify="brew services restart spotifyd"
+alias spotify="brew services restart spotifyd; spt"
 alias gcal="gcalcli"
-alias vi="vim"
 alias yt="youtube-dl --config-location ~/.config/youtube-dl/config"
-alias todo="todoist list"
+alias todo="todoist"
 alias stanfordtodo="todoist list --filter '##Stanford'"
 # MEMORY
 

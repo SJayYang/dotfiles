@@ -3,21 +3,7 @@
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
-
 export PATH=/usr/local/bin:$PATH
-
-
-
-
 
 # Setting PATH for Python 3.8
 # The original version is saved in .bash_profile.pysave
@@ -39,8 +25,14 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
+# Add cargo to the path
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Dotfiles configuration
 source ~/.bash_prompt
 source ~/.aliases
 source ~/.bashrc
+
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
