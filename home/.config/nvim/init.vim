@@ -15,7 +15,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " JSX related plugins
 
@@ -33,10 +33,9 @@ let g:ale_linters = {
       \   'python': ['flake8', 'pylint'],
       \   'javascript': ['eslint'],
       \   'css': ['csslint'],
-      \   'sh' : ['shellcheck', 'bashate'],
       \}
-let g:ale_completion_enabled = 1
-let g:ale_fix_on_save = 1
+
+
 " nerdtree related config
 map <C-o> :NERDTreeToggle<CR>
 

@@ -6,6 +6,9 @@ alias home="cl ~"
 alias videos="cl ~/Downloads/Videos"
 alias downloads="cl ~/Downloads"
 alias rockefeller="cl ~/'Onedrive - rockefeller.edu'/"
+alias v="vim"
+alias n="nvim"
+alias py="python3"
 # Helpful commands
 alias c="clear"
 # Counts files in the directory and its subdirectories (ignores the actual
