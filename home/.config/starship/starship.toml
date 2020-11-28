@@ -1,0 +1,13 @@
+
+# Main prompt format
+format = """
+[│](bold red)$directory$git_branch$package$memory_usage$time
+[└─>](bold red) """
+
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+[directory]
+truncation_length = 1
+
+
