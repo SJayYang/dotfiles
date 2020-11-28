@@ -1,6 +1,7 @@
 " Plugins will be downloaded under the specified directory.
 set rtp+=/usr/local/opt/fzf
 call plug#begin('~/.vim/plugged')
+let g:ale_disable_lsp = 1
 
 " Plug 'ctrlpvim/ctrlp.vim'
 " Plug '/usr/local/opt/fzf'
@@ -13,8 +14,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
+Plug 'francoiscabrol/ranger.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " JSX related plugins
@@ -34,7 +35,14 @@ let g:ale_linters = {
       \   'javascript': ['eslint'],
       \   'css': ['csslint'],
       \}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
 
+let g:ale_completion_enabled = 1
+let g:ale_fix_on_save = 1
+let g:ale_warn_about_trailing_whitespace = 0
+let g:ale_warn_about_trailing_blank_lines = 0
 
 " nerdtree related config
 map <C-o> :NERDTreeToggle<CR>

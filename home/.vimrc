@@ -37,6 +37,9 @@ let g:ale_linters = {
       \}
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
+let g:ale_warn_about_trailing_whitespace = 0
+let g:ale_warn_about_trailing_blank_lines = 0
+
 " nerdtree related config
 map <C-o> :NERDTreeToggle<CR>
 
