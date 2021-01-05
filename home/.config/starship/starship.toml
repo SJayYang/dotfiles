@@ -1,13 +1,17 @@
 
 # Main prompt format
 format = """
-[│](bold red)$directory$git_branch$package$memory_usage$time
-[└─>](bold red) """
+[│](bold #8c1515)$directory$memory_usage $cmd_duration $git_branch
+[└─>](bold #8c1515) """
 
 # Don't print a new line at the start of the prompt
 add_newline = false
 
 [directory]
 truncation_length = 1
+format = "[$path](bold #ffffff)[$read_only]($read_only_style)"
 
+[cmd_duration]
+
+format = "took [$duration](bold green)"
 

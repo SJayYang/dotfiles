@@ -6,10 +6,12 @@ alias home="cl ~"
 alias videos="cl ~/Downloads/Videos"
 alias downloads="cl ~/Downloads"
 alias cao="cl ~/'Onedrive - rockefeller.edu'/'Cao Lab'"
-alias v="vim"
 alias n="nvim"
 alias py="python3"
+
 # Helpful commands
+alias ssh='TERM=xterm-256color \ssh'
+alias rockefeller="ssh syang02@login01-hpc.rockefeller.edu"
 alias c="clear"
 # Counts files in the directory and its subdirectories (ignores the actual
 # subdirectory, but counts files within those subdirectories
@@ -23,8 +25,8 @@ alias dl="cl ~/Downloads"
 alias gh="cl ~/Github"
 
 # EASIER DOTFILE EDITING
-alias aliases="vi ~/.aliases && . ~/.aliases"
-alias bashprofile="vi ~/.bash_profile && . ~/.bash_profile"
+alias aliases="n ~/.aliases && . ~/.aliases"
+alias bashprofile="n ~/.bash_profile && . ~/.bash_profile"
 
 # COLORS
 alias ls="ls -GFh"

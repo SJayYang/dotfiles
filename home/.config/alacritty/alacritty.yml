@@ -1,7 +1,16 @@
 font:
   # Default colors
   size: 24
+  normal:
+      family: 'FiraCode Nerd Font'
+      style: Light
 
+  bold:
+      family: 'FiraCode Nerd Font'
+      style: Bold
+  italic:
+      family: 'FiraCode Nerd Font'
+      style: Regular
 
 # Repository: https://github.com/arcticicestudio/nord-alacritty
 
@@ -48,3 +57,15 @@ colors:
     - { index: 19, color: '0x32374d' }
     - { index: 20, color: '0x8796b0' }
     - { index: 21, color: '0x959dcb' }
+
+
+key_bindings:
+  - { key: Comma,     mods: Command,      command:
+      {program: "open", args: ["~/.config/alacritty/alacritty.yml"]}     }
+  - { key: N,         mods: Command,      action: SpawnNewInstance       }
+  - { key: Space,     mods: Alt,          chars: " "                     }
+  - { key: Back, mods: Super, chars: "\x15" } # delete word/line
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # one word left
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       } # one word right
+  - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
+  - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End
