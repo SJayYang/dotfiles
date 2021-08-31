@@ -3,7 +3,7 @@
         "aria2c_for_torrents": false,
         "aria2c_log_level": "error",
         "chunk_size": "10",
-        "download_dir": "~/anime/",
+        "download_dir": "/Users/stanley/anime",
         "external_downloader": "{aria2}",
         "fallback_qualities": [
             "1080p",
@@ -12,7 +12,7 @@
         "file_format": "{anime_title}/{anime_title}_{ep_no}",
         "force_download": false,
         "player": null,
-        "provider": "4anime",
+        "provider": "vidstream",
         "quality": "1080p",
         "selescrape_browser": null,
         "selescrape_browser_executable_path": null,

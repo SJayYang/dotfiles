@@ -1,12 +1,25 @@
 {
-    "workbench.colorTheme": "Palenight Theme",
-    "editor.fontSize": 16,
+    "editor.fontSize": 20,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "python.pythonPath": "/Users/stanley/anaconda3/envs/covidangel/bin/python",
+    "python.pythonPath": "/Users/stanley/anaconda3/bin/python",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.colorTheme": "Palenight Theme",
+    "editor.minimap.enabled": false,
+    "git.ignoreLegacyWarning": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.wordWrap": "on",
     "terminal.integrated.inheritEnv": false,
-    "editor.lineNumbers": "relative",
-    "terminal.external.osxExec": "Alacritty.app",
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "300",
-    "editor.fontFamily": "Fira Code"
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "editor.tabSize": 8,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
 }

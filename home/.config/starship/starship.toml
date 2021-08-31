@@ -1,7 +1,7 @@
 
 # Main prompt format
 format = """
-[│](bold #8c1515)$directory$memory_usage $cmd_duration $git_branch
+[│](bold #8c1515)$directory $conda$cmd_duration $git_branch
 [└─>](bold #8c1515) """
 
 # Don't print a new line at the start of the prompt
@@ -12,6 +12,7 @@ truncation_length = 1
 format = "[$path](bold #ffffff)[$read_only]($read_only_style)"
 
 [cmd_duration]
-
 format = "took [$duration](bold green)"
 
+[conda]
+format = "via [$environment](bold white) "

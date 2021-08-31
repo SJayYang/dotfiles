@@ -8,3 +8,5 @@
 	email = stanley.j.yang@gmail.com
 [core]
 	excludesfile = /Users/stanley/.gitignore
+[color]
+	ui = auto

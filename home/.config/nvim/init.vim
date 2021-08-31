@@ -24,6 +24,8 @@ Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-surround'
 Plug 'takac/vim-hardtime'
+Plug 'python-rope/ropevim'
+" Jedi vi
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -58,8 +60,9 @@ let g:jsx_ext_required = 0
 
 
 " ale related config
+" 'python': ['flake8', 'pylint'],
 let g:ale_linters = {
-      \   'python': ['flake8', 'pylint'],
+      \   'python': ['flake8'],
       \   'javascript': ['eslint'],
       \   'css': ['csslint'],
       \   'sh': ['shellcheck', 'bashate'],
@@ -68,11 +71,17 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_delay = 1000
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
-let g:ale_warn_about_trailing_whitespace = 0
-let g:ale_warn_about_trailing_blank_lines = 0
+let g:ale_warn_about_trailing_whitespace = 1
+let g:ale_warn_about_trailing_blank_lines = 1
 let g:ale_sh_bashate_options = '--ignore E006'
+let g:ale_set_signs = 1
+" let g:ale_set_highlights = 0
+highlight ALEError ctermbg=none cterm=underline
+highlight ALEWarning ctermbg=none cterm=underline
 
 " nerdtree related config
 map <C-o> :NERDTreeToggle<CR>
@@ -137,7 +146,6 @@ set incsearch " incremental search (as string is being typed)
 " open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
-
 
 " Code folding
 set foldenable

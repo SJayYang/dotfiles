@@ -26,3 +26,6 @@ export STARSHIP_CACHE=~/.config/starship/cache
 
 # Prevent the alacritty app from jumping
 printf "\e[?1042l"
+
+# Vim bindings
+set -o vi
